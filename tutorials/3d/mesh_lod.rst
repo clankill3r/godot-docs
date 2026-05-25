@@ -75,7 +75,7 @@ anything manually.
 However, mesh LOD generation does **not** automatically happen for imported 3D
 meshes (OBJ). This is because OBJ files are not imported as full 3D scenes by
 default, but only as individual mesh resources to load into a MeshInstance3D
-node (or GPUParticles3D, CPUParticles3D, ...).
+node (or , CPUParticles3D, ...).
 
 To make an OBJ file have mesh LOD generated for it, select it in the FileSystem
 dock, go to the Import dock, change its **Import As** option to **Scene** then
@@ -186,7 +186,7 @@ For LOD selection, the point of the node's :abbr:`AABB (Axis-Aligned Bounding Bo
 that is the closest to the camera is used as a basis. This applies to any kind
 of mesh LOD (including for individual MeshInstance3D)s, but this has some implications
 for nodes that display multiple meshes at once, such as MultiMeshInstance3D,
-GPUParticles3D and GPUParticles3D. Most importantly, this means that all
+CPUParticles3D and GPUParticles3D. Most importantly, this means that all
 instances will be drawn with the same LOD level at a given time.
 
 If you are noticing incorrect LOD selection with GPUParticles3D, make sure
